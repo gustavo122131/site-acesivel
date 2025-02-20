@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-pt="Menu | Acessibilidade Digital" data-lang-en="Menu | Digital Accessibility">Menu | Acessibilidade Digital</title>
+    <link href="index.css" rel="stylesheet">
+    <link rel="icon" href="imagens/icone.png" type="image/png">    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html">
+                    <img src="imagens/logo.png" alt="Logo Acessibilidade Digital" data-lang-pt="Logo Acessibilidade Digital" data-lang-en="Digital Accessibility Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html" data-lang-pt="Menu" data-lang-en="Menu">Menu</a>
+                    <a href="artigos.html" data-lang-pt="Artigos" data-lang-en="Articles">Artigos</a>
+                    <a href="recursos.html" data-lang-pt="Recursos" data-lang-en="Resources">Recursos</a>
+                    <a href="perguntas.html" data-lang-pt="Perguntas frequentes" data-lang-en="FAQs">Perguntas frequentes</a>
+                    <a class="btn" href="contato.html" data-lang-pt="Fale com a gente" data-lang-en="Contact Us">Fale com a gente</a>
+                </ul>
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1 data-lang-pt="Acessibilidade Digital" data-lang-en="Digital Accessibility">Acessibilidade Digital</h1>
+                    <p data-lang-pt="Inclusão para todos começa com acessibilidade!" data-lang-en="Inclusion for all begins with accessibility!">Inclusão para todos começa com acessibilidade!</p>
+                </div>
+            </section>
+        </div> 
+    </header>
+    
+    <div class="accessibility-buttons">
+        <button id="changeLanguage" class="accessibility" onclick="toggleLanguage()">
+            <img src="imagens/lingua.png" alt="Mudar idioma" data-lang-pt="Mudar idioma" data-lang-en="Change language">
+        </button>
+        <button id="toggleContrast" class="accessibility" onclick="toggleContrast()">
+            <img src="imagens/contraste.png" alt="Alterar contraste" data-lang-pt="Alterar contraste" data-lang-en="Toggle contrast">
+        </button>
+    </div>
+    <div class="font-size-controls">
+        <button id="increaseFont" class="accessibility1" onclick="changeFontSize('increase')">
+            <img src="imagens/aumentar.png" alt="Aumentar fonte" data-lang-pt="Aumentar fonte" data-lang-en="Increase font">
+        </button>
+        <button id="decreaseFont" class="accessibility1" onclick="changeFontSize('decrease')">
+            <img src="imagens/diminuir.png" alt="Diminuir fonte" data-lang-pt="Diminuir fonte" data-lang-en="Decrease font">
+        </button>
+    </div>
+
+    <section class="introducao">
+        <div class="container">
+            <div class="introducao-text">
+                <h3 data-lang-pt="O que é acessibilidade digital?" data-lang-en="What is digital accessibility?">O que é acessibilidade digital?</h3>
+                <p data-lang-pt="A acessibilidade digital refere-se à prática de criar conteúdos e tecnologias digitais que possam ser usados por todas as pessoas, incluindo aquelas com deficiência. Isso envolve garantir que sites, aplicativos e plataformas digitais sejam acessíveis para indivíduos com diferentes tipos de limitações, como deficiência visual, auditiva, motora ou cognitiva. Acessibilidade digital inclui ajustes como leitores de tela, navegação por teclado, legendas em vídeos, entre outros, para permitir que todos os usuários tenham uma experiência plena e igualitária ao interagir com o ambiente digital."
+                   data-lang-en="Digital accessibility refers to the practice of creating digital content and technologies that can be used by everyone, including people with disabilities. This involves ensuring that websites, apps, and digital platforms are accessible to individuals with various types of limitations, such as visual, hearing, motor, or cognitive disabilities. Digital accessibility includes adjustments like screen readers, keyboard navigation, video captions, and more, to ensure that all users can have a full and equal experience while interacting with the digital environment.">Acessibilidade digital refere-se à prática de criar conteúdos e tecnologias digitais que possam ser usados por todas as pessoas, incluindo aquelas com deficiência. Isso envolve garantir que sites, aplicativos e plataformas digitais sejam acessíveis para indivíduos com diferentes tipos de limitações, como deficiência visual, auditiva, motora ou cognitiva. Acessibilidade digital inclui ajustes como leitores de tela, navegação por teclado, legendas em vídeos, entre outros, para permitir que todos os usuários tenham uma experiência plena e igualitária ao interagir com o ambiente digital.</p>
+            </div>
+            <div class="introducao-img">
+                <img src="imagens/imagem1.png" alt="Imagem ilustrativa de acessibilidade digital" data-lang-pt="Imagem ilustrativa de acessibilidade digital" data-lang-en="Illustrative image of digital accessibility">
+            </div>
+        </div>
+    </section>
+    <section class="depoimentos">
+        <div class="container">
+            <h3 data-lang-pt="O que dizem sobre?" data-lang-en="What do they say about it?">O que dizem sobre?</h3>
+            <div class="cards">
+                <div class="card-item-1">
+                    <h4 data-lang-pt='"Mudou a minha vida!"' data-lang-en='"It changed my life!"'>"Mudou a minha vida!"</h4>
+                    <p class="depoimento-usuario" data-lang-pt="Graças às ferramentas acessíveis, consigo trabalhar e estudar com autonomia." data-lang-en="Thanks to accessible tools, I can work and study independently.">Graças às ferramentas acessíveis, consigo trabalhar e estudar com autonomia.</p>
+                </div>
+                <div class="card-item-2">
+                    <h4 data-lang-pt='"Mais inclusão"' data-lang-en='"More inclusion"'>"Mais inclusão"</h4>
+                    <p class="depoimento-usuario" data-lang-pt="É incrível ver como pequenas mudanças, como ícones e legendas, fazem uma grande diferença na vida das pessoas." data-lang-en="It’s amazing to see how small changes, like icons and captions, make a big difference in people's lives.">É incrível ver como pequenas mudanças, como ícones e legendas, fazem uma grande diferença na vida das pessoas.</p>
+                </div>
+                <div class="card-item-3">
+                    <h4 data-lang-pt='"Informação essencial"' data-lang-en='"Essential information"'>"Informação essencial"</h4>
+                    <p class="depoimento-usuario" data-lang-pt="Os artigos deste site são informativos e ajudam a conscientizar mais pessoas sobre a importância da acessibilidade." data-lang-en="The articles on this site are informative and help raise awareness about the importance of accessibility.">Os artigos deste site são informativos e ajudam a conscientizar mais pessoas sobre a importância da acessibilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <p data-lang-pt="&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera." data-lang-en="&copy; 2024 - Digital Accessibility. Made by: Arthur Rodrigues Pansera.">&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera.</p>
+    </footer>
+</body>
+</html>

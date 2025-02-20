@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-pt="Artigos | Acessibilidade Digital" data-lang-en="Articles | Digital Accessibility">Artigos | Acessibilidade Digital</title>
+    <link href="artigos.css" rel="stylesheet">
+    <link rel="icon" href="imagens/icone.png" type="image/png">  
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html">
+                    <img src="imagens/logo.png" alt="Logo Acessibilidade Digital" data-lang-pt="Logo Acessibilidade Digital" data-lang-en="Digital Accessibility Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html" data-lang-pt="Menu" data-lang-en="Menu">Menu</a>
+                    <a href="artigos.html" data-lang-pt="Artigos" data-lang-en="Articles">Artigos</a>
+                    <a href="recursos.html" data-lang-pt="Recursos" data-lang-en="Resources">Recursos</a>
+                    <a href="perguntas.html" data-lang-pt="Perguntas frequentes" data-lang-en="FAQs">Perguntas frequentes</a>
+                    <a class="btn" href="contato.html" data-lang-pt="Fale com a gente" data-lang-en="Contact us">Fale com a gente</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="accessibility-buttons">
+        <button id="changeLanguage" class="accessibility" onclick="toggleLanguage()">
+            <img src="imagens/lingua.png" alt="Mudar idioma" data-lang-pt="Mudar idioma" data-lang-en="Change language">
+        </button>
+        <button id="toggleContrast" class="accessibility" onclick="toggleContrast()">
+            <img src="imagens/contraste.png" alt="Alterar contraste" data-lang-pt="Alterar contraste" data-lang-en="Toggle contrast">
+        </button>
+    </div>
+    <div class="font-size-controls">
+        <button id="increaseFont" class="accessibility1" onclick="changeFontSize('increase')">
+            <img src="imagens/aumentar.png" alt="Aumentar fonte" data-lang-pt="Aumentar fonte" data-lang-en="Increase font">
+        </button>
+        <button id="decreaseFont" class="accessibility1" onclick="changeFontSize('decrease')">
+            <img src="imagens/diminuir.png" alt="Diminuir fonte" data-lang-pt="Diminuir fonte" data-lang-en="Decrease font">
+        </button>
+    </div>
+
+    <section class="info">
+        <section class="introducao">
+            <div class="container">
+                <div class="introducao-text">
+                    <div class="text">
+                        <h3 data-lang-pt="A importância da acessibilidade digital" data-lang-en="The importance of digital accessibility">A importância da acessibilidade digital</h3>
+                        <p data-lang-pt="No mundo conectado de hoje, a acessibilidade digital é essencial para garantir que todos, independentemente de suas habilidades, possam interagir com tecnologias e conteúdos digitais de forma inclusiva." data-lang-en="In today's connected world, digital accessibility is essential to ensure that everyone, regardless of their abilities, can interact with technologies and digital content in an inclusive way.">No mundo conectado de hoje, a acessibilidade digital é essencial para garantir que todos, independentemente de suas habilidades, possam interagir com tecnologias e conteúdos digitais de forma inclusiva.</p>
+                        <p data-lang-pt="Empresas e organizações que priorizam a acessibilidade não apenas cumprem requisitos legais, mas também demonstram compromisso com a diversidade e inclusão. Essa prática promove igualdade, melhora a experiência dos usuários e abre portas para novos públicos." data-lang-en="Companies and organizations that prioritize accessibility not only comply with legal requirements but also demonstrate a commitment to diversity and inclusion. This practice promotes equality, improves user experience, and opens doors to new audiences.">Empresas e organizações que priorizam a acessibilidade não apenas cumprem requisitos legais, mas também demonstram compromisso com a diversidade e inclusão. Essa prática promove igualdade, melhora a experiência dos usuários e abre portas para novos públicos.</p>
+                        <p data-lang-pt="Adotar a acessibilidade digital é um passo em direção a uma sociedade mais justa, onde todos têm as mesmas oportunidades de acesso à informação e aos serviços online." data-lang-en="Adopting digital accessibility is a step toward a fairer society where everyone has the same opportunities to access information and online services.">Adotar a acessibilidade digital é um passo em direção a uma sociedade mais justa, onde todos têm as mesmas oportunidades de acesso à informação e aos serviços online.</p>
+                    </div>
+                    <img src="imagens/acessibilidade.avif" class="imagem" alt="Ilustração de acessibilidade digital" data-lang-pt="Ilustração de acessibilidade digital" data-lang-en="Illustration of digital accessibility">
+                </div> 
+            </div>
+        </section>
+
+        <section class="introducao">
+            <div class="container">
+                <div class="introducao-text">
+                    <img src="imagens/importancia.png" class="imagem" alt="Exemplo de site acessível" data-lang-pt="Exemplo de site acessível" data-lang-en="Example of an accessible website">
+                    <div class="text">
+                        <h3 data-lang-pt="Práticas essenciais para um site acessível" data-lang-en="Essential practices for an accessible website">Práticas essenciais para um site acessível</h3>
+                        <p data-lang-pt="Para criar um site acessível, é fundamental seguir diretrizes como as estabelecidas no WCAG (Web Content Accessibility Guidelines). Algumas práticas incluem:" data-lang-en="To create an accessible website, it is essential to follow guidelines like those established in WCAG (Web Content Accessibility Guidelines). Some practices include:">Para criar um site acessível, é fundamental seguir diretrizes como as estabelecidas no WCAG (Web Content Accessibility Guidelines). Algumas práticas incluem:</p>
+                        <ul>
+                            <li data-lang-pt="Fornecer alternativas textuais para imagens e gráficos." data-lang-en="Provide textual alternatives for images and graphics.">Fornecer alternativas textuais para imagens e gráficos.</li>
+                            <li data-lang-pt="Garantir contraste adequado entre texto e fundo." data-lang-en="Ensure adequate contrast between text and background.">Garantir contraste adequado entre texto e fundo.</li>
+                            <li data-lang-pt="Organizar o conteúdo com uma hierarquia clara." data-lang-en="Organize the content with a clear hierarchy.">Organizar o conteúdo com uma hierarquia clara.</li>
+                            <li data-lang-pt="Permitir navegação usando apenas o teclado." data-lang-en="Allow navigation using only the keyboard.">Permitir navegação usando apenas o teclado.</li>
+                        </ul>
+                        <p data-lang-pt="Essas medidas tornam o site mais intuitivo e inclusivo para pessoas com diferentes habilidades." data-lang-en="These measures make the website more intuitive and inclusive for people with different abilities.">Essas medidas tornam o site mais intuitivo e inclusivo para pessoas com diferentes habilidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="introducao">
+            <div class="container">
+                <div class="introducao-text">
+                    <div class="text">
+                        <h3 data-lang-pt="Benefícios de um design inclusivo" data-lang-en="Benefits of an inclusive design">Benefícios de um design inclusivo</h3>
+                        <p data-lang-pt="Investir em acessibilidade digital não é apenas uma questão de responsabilidade social, mas também de vantagem competitiva. Um design inclusivo pode:" data-lang-en="Investing in digital accessibility is not just a matter of social responsibility, but also a competitive advantage. An inclusive design can:">Investir em acessibilidade digital não é apenas uma questão de responsabilidade social, mas também de vantagem competitiva. Um design inclusivo pode:</p>
+                        <ul>
+                            <li data-lang-pt="Alcançar um público maior." data-lang-en="Reach a larger audience.">Alcançar um público maior.</li>
+                            <li data-lang-pt="Melhorar o SEO do site." data-lang-en="Improve the website's SEO.">Melhorar o SEO do site.</li>
+                            <li data-lang-pt="Fortalecer a reputação da marca." data-lang-en="Strengthen the brand's reputation.">Fortalecer a reputação da marca.</li>
+                            <li data-lang-pt="Reduzir riscos legais relacionados à não conformidade." data-lang-en="Reduce legal risks related to non-compliance.">Reduzir riscos legais relacionados à não conformidade.</li>
+                        </ul>
+                        <p data-lang-pt="Adotar um design acessível beneficia a todos, promovendo igualdade no acesso à informação." data-lang-en="Adopting an accessible design benefits everyone by promoting equality in access to information.">Adotar um design acessível beneficia a todos, promovendo igualdade no acesso à informação.</p>
+                    </div>
+                    <img src="imagens/design.png" class="imagem" alt="Equipe trabalhando em design inclusivo" data-lang-pt="Equipe trabalhando em design inclusivo" data-lang-en="Team working on inclusive design">
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <p data-lang-pt="&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera." data-lang-en="&copy; 2024 - Digital Accessibility. Made by: Arthur Rodrigues Pansera.">&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera.</p>
+    </footer>
+</body>
+</html>

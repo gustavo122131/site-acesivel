@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    background-color: rgb(46, 108, 242);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 35px;
+    height: 100px;
+}
+
+nav img {
+    padding-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul a {
+    color: white;
+    margin: 0 16px;
+    text-transform: uppercase;
+    font-size: 18px;
+    display: block;
+}
+
+nav ul a:not(.btn)::after {
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 0;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+nav ul a:hover::after {
+    width: 100%;
+}
+
+nav a img {
+    width: 200px;
+}
+
+.btn {
+    background-color: rgb(0, 45, 143);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: rgb(0, 26, 82);
+}
+
+.accessibility-buttons {
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.accessibility {
+    padding: 8px;
+    background-color: yellow;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility:hover {
+    background-color: rgb(160, 160, 0);
+}
+
+.accessibility img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.font-size-controls {
+    position: absolute;
+    top: 190px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 100;
+}
+
+.accessibility1 {
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accessibility1:hover {
+    background-color: rgb(127, 0, 0);
+}
+
+.accessibility1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.high-contrast {
+    background-color: rgb(59, 59, 59);
+    color: white;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.section .title {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    row-gap: 80px;
+    margin-bottom: 70px;
+}
+
+.resource-item {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.resource-img {
+    width: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.resource-item h2 {
+    margin-bottom: 10px;
+}
+
+.resource-item p {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(46, 108, 242);
+    border-top: 3px solid rgb(46, 108, 242);
+    padding: 30px 0px;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+}

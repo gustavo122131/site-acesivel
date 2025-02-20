@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-pt="Recursos | Acessibilidade Digital" data-lang-en="Resources | Digital Accessibility">Recursos | Acessibilidade Digital</title>
+    <link href="recursos.css" rel="stylesheet">
+    <link rel="icon" href="imagens/icone.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html">
+                    <img src="imagens/logo.png" alt="Logo Acessibilidade Digital" data-lang-pt="Logo Acessibilidade Digital" data-lang-en="Digital Accessibility Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html" data-lang-pt="Menu" data-lang-en="Menu">Menu</a>
+                    <a href="artigos.html" data-lang-pt="Artigos" data-lang-en="Articles">Artigos</a>
+                    <a href="recursos.html" data-lang-pt="Recursos" data-lang-en="Resources">Recursos</a>
+                    <a href="perguntas.html" data-lang-pt="Perguntas frequentes" data-lang-en="FAQs">Perguntas frequentes</a>
+                    <a class="btn" href="contato.html" data-lang-pt="Fale com a gente" data-lang-en="Contact us">Fale com a gente</a>
+                </ul>
+            </nav>
+        </div> 
+    </header>
+
+    <div class="accessibility-buttons">
+        <button id="changeLanguage" class="accessibility" onclick="toggleLanguage()">
+            <img src="imagens/lingua.png" alt="Mudar idioma" data-lang-pt="Mudar idioma" data-lang-en="Change language">
+        </button>
+        <button id="toggleContrast" class="accessibility" onclick="toggleContrast()">
+            <img src="imagens/contraste.png" alt="Alterar contraste" data-lang-pt="Alterar contraste" data-lang-en="Change contrast">
+        </button>
+    </div>
+    <div class="font-size-controls">
+        <button id="increaseFont" class="accessibility1" onclick="changeFontSize('increase')">
+            <img src="imagens/aumentar.png" alt="Aumentar fonte" data-lang-pt="Aumentar fonte" data-lang-en="Increase font">
+        </button>
+        <button id="decreaseFont" class="accessibility1" onclick="changeFontSize('decrease')">
+            <img src="imagens/diminuir.png" alt="Diminuir fonte" data-lang-pt="Diminuir fonte" data-lang-en="Decrease font">
+        </button>
+    </div>
+
+    <section class="section">
+        <h1 class="title" data-lang-pt="Recursos de Acessibilidade Digital" data-lang-en="Digital Accessibility Resources">Recursos de Acessibilidade Digital</h1>
+        <div class="resources">
+            <div class="resource-item">
+                <img src="imagens/leitor.png" alt="Ícone de leitor de tela" data-lang-pt="Ícone de leitor de tela" data-lang-en="Screen reader icon" class="resource-img">
+                <h2 data-lang-pt="Leitores de Tela" data-lang-en="Screen Readers">Leitores de Tela</h2>
+                <p data-lang-pt="Ferramentas como o NVDA e o JAWS permitem que pessoas com deficiência visual naveguem em sites utilizando áudio para interpretar o conteúdo textual." data-lang-en="Tools like NVDA and JAWS allow visually impaired users to navigate websites using audio to interpret textual content.">Ferramentas como o NVDA e o JAWS permitem que pessoas com deficiência visual naveguem em sites utilizando áudio para interpretar o conteúdo textual.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/contraste.png" alt="Ícone de alto contraste" data-lang-pt="Ícone de alto contraste" data-lang-en="High contrast icon" class="resource-img">
+                <h2 data-lang-pt="Modo de Alto Contraste" data-lang-en="High Contrast Mode">Modo de Alto Contraste</h2>
+                <p data-lang-pt="Configurações que aumentam a legibilidade do conteúdo, utilizando combinações de cores contrastantes para usuários com baixa visão." data-lang-en="Settings that enhance content readability using contrasting color combinations for low-vision users.">Configurações que aumentam a legibilidade do conteúdo, utilizando combinações de cores contrastantes para usuários com baixa visão.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/navegacao.webp" alt="Ícone de navegação por teclado" data-lang-pt="Ícone de navegação por teclado" data-lang-en="Keyboard navigation icon" class="resource-img">
+                <h2 data-lang-pt="Navegação por Teclado" data-lang-en="Keyboard Navigation">Navegação por Teclado</h2>
+                <p data-lang-pt="Funcionalidade que permite acessar todo o site apenas com o teclado, essencial para pessoas com mobilidade reduzida." data-lang-en="Functionality that allows full website access using only the keyboard, essential for people with reduced mobility.">Funcionalidade que permite acessar todo o site apenas com o teclado, essencial para pessoas com mobilidade reduzida.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/legendas.png" alt="Ícone de legendas" data-lang-pt="Ícone de legendas" data-lang-en="Captions icon" class="resource-img">
+                <h2 data-lang-pt="Legendas em Vídeos" data-lang-en="Video Captions">Legendas em Vídeos</h2>
+                <p data-lang-pt="Vídeos com legendas ajudam usuários com deficiência auditiva a compreenderem o conteúdo audiovisual." data-lang-en="Videos with captions help hearing-impaired users understand audiovisual content.">Vídeos com legendas ajudam usuários com deficiência auditiva a compreenderem o conteúdo audiovisual.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/fonte.png" alt="Ícone de fonte ajustável" data-lang-pt="Ícone de fonte ajustável" data-lang-en="Adjustable font icon" class="resource-img">
+                <h2 data-lang-pt="Ajuste de Fontes" data-lang-en="Font Adjustment">Ajuste de Fontes</h2>
+                <p data-lang-pt="Opções para aumentar ou diminuir o tamanho das fontes no site, garantindo conforto na leitura para todos os usuários." data-lang-en="Options to increase or decrease font sizes on the website, ensuring comfortable reading for all users.">Opções para aumentar ou diminuir o tamanho das fontes no site, garantindo conforto na leitura para todos os usuários.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/libras.webp" alt="Ícone de intérprete de sinais" data-lang-pt="Ícone de intérprete de sinais" data-lang-en="Sign language interpreter icon" class="resource-img">
+                <h2 data-lang-pt="Interpretação em Libras" data-lang-en="Sign Language Interpretation">Interpretação em Libras</h2>
+                <p data-lang-pt="Plataformas que incluem avatares ou intérpretes em Libras ajudam a tornar o conteúdo mais acessível para pessoas surdas." data-lang-en="Platforms that include avatars or sign language interpreters make content more accessible for deaf users.">Plataformas que incluem avatares ou intérpretes em Libras ajudam a tornar o conteúdo mais acessível para pessoas surdas.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/lingua.png" alt="Ícone de mudar idioma" data-lang-pt="Ícone de mudar idioma" data-lang-en="Change language icon" class="resource-img">
+                <h2 data-lang-pt="Mudar Idioma" data-lang-en="Change Language">Mudar Idioma</h2>
+                <p data-lang-pt="Opções para mudar o idioma do site, permitindo que o conteúdo seja acessível para pessoas que falam diferentes línguas." data-lang-en="Options to change the website language, making content accessible for speakers of different languages.">Opções para mudar o idioma do site, permitindo que o conteúdo seja acessível para pessoas que falam diferentes línguas.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/zoom.png" alt="Ícone de ampliador de tela" data-lang-pt="Ícone de ampliador de tela" data-lang-en="Screen magnifier icon" class="resource-img">
+                <h2 data-lang-pt="Ampliador de Tela" data-lang-en="Screen Magnifier">Ampliador de Tela</h2>
+                <p data-lang-pt="Ferramentas de zoom ou ampliadores que permitem aumentar o conteúdo exibido na tela, facilitando a leitura para usuários com baixa visão." data-lang-en="Zoom tools or magnifiers that allow increasing screen content, making reading easier for low-vision users.">Ferramentas de zoom ou ampliadores que permitem aumentar o conteúdo exibido na tela, facilitando a leitura para usuários com baixa visão.</p>
+            </div>
+            <div class="resource-item">
+                <img src="imagens/daltonismo.png" alt="Ícone de filtro de daltonismo" data-lang-pt="Ícone de filtro de daltonismo" data-lang-en="Color blindness filter icon" class="resource-img">
+                <h2 data-lang-pt="Filtro de Daltonismo" data-lang-en="Color Blindness Filter">Filtro de Daltonismo</h2>
+                <p data-lang-pt="Ferramenta que permite ajustar as cores do site para diferentes tipos de daltonismo, tornando o conteúdo mais acessível para pessoas com dificuldades na percepção de cores." data-lang-en="A tool to adjust site colors for different types of color blindness, making content more accessible for users with color perception difficulties.">Ferramenta que permite ajustar as cores do site para diferentes tipos de daltonismo, tornando o conteúdo mais acessível para pessoas com dificuldades na percepção de cores.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <footer>
+        <p data-lang-pt="&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera." data-lang-en="&copy; 2024 - Digital Accessibility. Made by: Arthur Rodrigues Pansera.">&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera.</p>
+    </footer>
+</body>
+</html>

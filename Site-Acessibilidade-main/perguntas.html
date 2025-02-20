@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-pt="Perguntas Frequentes | Acessibilidade Digital" data-lang-en="FAQs | Digital Accessibility">Perguntas Frequentes | Acessibilidade Digital</title>
+    <link href="perguntas.css" rel="stylesheet">
+    <link rel="icon" href="imagens/icone.png" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="index.html">
+                    <img src="imagens/logo.png" alt="Logo Acessibilidade Digital" data-lang-pt="Logo Acessibilidade Digital" data-lang-en="Digital Accessibility Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html" data-lang-pt="Menu" data-lang-en="Menu">Menu</a>
+                    <a href="artigos.html" data-lang-pt="Artigos" data-lang-en="Articles">Artigos</a>
+                    <a href="recursos.html" data-lang-pt="Recursos" data-lang-en="Resources">Recursos</a>
+                    <a href="perguntas.html" data-lang-pt="Perguntas frequentes" data-lang-en="FAQs">Perguntas frequentes</a>
+                    <a class="btn" href="contato.html" data-lang-pt="Fale com a gente" data-lang-en="Contact us">Fale com a gente</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="accessibility-buttons">
+        <button id="changeLanguage" class="accessibility" onclick="toggleLanguage()">
+            <img src="imagens/lingua.png" alt="Mudar idioma" data-lang-pt="Mudar idioma" data-lang-en="Change language">
+        </button>
+        <button id="toggleContrast" class="accessibility" onclick="toggleContrast()">
+            <img src="imagens/contraste.png" alt="Alterar contraste" data-lang-pt="Alterar contraste" data-lang-en="Change contrast">
+        </button>
+    </div>
+    <div class="font-size-controls">
+        <button id="increaseFont" class="accessibility1" onclick="changeFontSize('increase')">
+            <img src="imagens/aumentar.png" alt="Aumentar fonte" data-lang-pt="Aumentar fonte" data-lang-en="Increase font">
+        </button>
+        <button id="decreaseFont" class="accessibility1" onclick="changeFontSize('decrease')">
+            <img src="imagens/diminuir.png" alt="Diminuir fonte" data-lang-pt="Diminuir fonte" data-lang-en="Decrease font">
+        </button>
+    </div>
+    
+    <section>
+        <div class="container">
+            <div>
+                <h1 id="title" data-lang-pt="Perguntas Frequentes" data-lang-en="Frequently Asked Questions">Perguntas Frequentes</h1>
+            </div>
+            <div class="perguntas">
+                <h3 data-lang-pt="Por que a acessibilidade digital é importante?" data-lang-en="Why is digital accessibility important?">Por que a acessibilidade digital é importante?</h3>
+                <p data-lang-pt="Acessibilidade digital é fundamental para garantir que todas as pessoas, independentemente de suas limitações, possam acessar a internet e participar ativamente do mundo digital. Isso ajuda a promover a inclusão social e garante que os direitos de todas as pessoas sejam respeitados." data-lang-en="Digital accessibility is essential to ensure that everyone, regardless of their limitations, can access the internet and actively participate in the digital world. This promotes social inclusion and ensures that everyone's rights are respected.">Acessibilidade digital é fundamental para garantir que todas as pessoas, independentemente de suas limitações, possam acessar a internet e participar ativamente do mundo digital. Isso ajuda a promover a inclusão social e garante que os direitos de todas as pessoas sejam respeitados.</p>
+            </div>
+            <div class="perguntas">
+                <h3 data-lang-pt="Quais são as principais práticas para melhorar a acessibilidade digital?" data-lang-en="What are the main practices to improve digital accessibility?">Quais são as principais práticas para melhorar a acessibilidade digital?</h3>
+                <p data-lang-pt="As principais práticas incluem garantir um bom contraste de cores, usar texto alternativo para imagens, tornar o site navegável por teclado e incluir legendas em vídeos. Além disso, é importante seguir diretrizes como WCAG (Web Content Accessibility Guidelines) para garantir a acessibilidade de todos os usuários." data-lang-en="The main practices include ensuring good color contrast, using alternative text for images, making the site keyboard-accessible, and including captions in videos. It is also important to follow guidelines such as the WCAG (Web Content Accessibility Guidelines) to ensure accessibility for all users.">As principais práticas incluem garantir um bom contraste de cores, usar texto alternativo para imagens, tornar o site navegável por teclado e incluir legendas em vídeos. Além disso, é importante seguir diretrizes como WCAG (Web Content Accessibility Guidelines) para garantir a acessibilidade de todos os usuários.</p>
+            </div>
+            <div class="perguntas">
+                <h3 data-lang-pt="O que são as WCAG e por que elas são importantes?" data-lang-en="What are the WCAG and why are they important?">O que são as WCAG e por que elas são importantes?</h3>
+                <p data-lang-pt="As WCAG (Web Content Accessibility Guidelines) são um conjunto de diretrizes desenvolvidas para garantir que o conteúdo web seja acessível a todas as pessoas, incluindo aquelas com deficiência. Elas ajudam a criar sites e aplicativos mais inclusivos e acessíveis." data-lang-en="The WCAG (Web Content Accessibility Guidelines) are a set of guidelines developed to ensure that web content is accessible to everyone, including people with disabilities. They help create more inclusive and accessible websites and applications.">As WCAG (Web Content Accessibility Guidelines) são um conjunto de diretrizes desenvolvidas para garantir que o conteúdo web seja acessível a todas as pessoas, incluindo aquelas com deficiência. Elas ajudam a criar sites e aplicativos mais inclusivos e acessíveis.</p>
+            </div>
+            <div class="perguntas">
+                <h3 data-lang-pt="Quais recursos podem ser adicionados para melhorar a acessibilidade em um site?" data-lang-en="What resources can be added to improve a site's accessibility?">Quais recursos podem ser adicionados para melhorar a acessibilidade em um site?</h3>
+                <ul class="lista">
+                    <li data-lang-pt="Leitores de tela para deficientes visuais." data-lang-en="Screen readers for visually impaired users.">Leitores de tela para deficientes visuais.</li>
+                    <li data-lang-pt="Contraste elevado para ajudar pessoas com baixa visão." data-lang-en="High contrast to assist low-vision users.">Contraste elevado para ajudar pessoas com baixa visão.</li>
+                    <li data-lang-pt="Teclado acessível para pessoas com mobilidade reduzida." data-lang-en="Accessible keyboard for users with reduced mobility.">Teclado acessível para pessoas com mobilidade reduzida.</li>
+                    <li data-lang-pt="Legendagem e transcrição para conteúdo multimídia para deficientes auditivos." data-lang-en="Captioning and transcription for multimedia content for hearing-impaired users.">Legendagem e transcrição para conteúdo multimídia para deficientes auditivos.</li>
+                    <li data-lang-pt="Conteúdo em Libras (Língua Brasileira de Sinais) para surdos." data-lang-en="Content in Libras (Brazilian Sign Language) for deaf users.">Conteúdo em Libras (Língua Brasileira de Sinais) para surdos.</li>
+                </ul>
+            </div>
+            <div class="perguntas">
+                <h3 data-lang-pt="Como posso testar se meu site é acessível?" data-lang-en="How can I test if my site is accessible?">Como posso testar se meu site é acessível?</h3>
+                <p data-lang-pt="Existem várias ferramentas e extensões de navegador que podem ser usadas para testar a acessibilidade de um site, como o WAVE, Lighthouse e a extensão Axe. Além disso, é importante realizar testes com usuários reais para garantir que o site atenda às necessidades de todos." data-lang-en="There are several tools and browser extensions that can be used to test site accessibility, such as WAVE, Lighthouse, and the Axe extension. It is also important to conduct tests with real users to ensure the site meets everyone's needs.">Existem várias ferramentas e extensões de navegador que podem ser usadas para testar a acessibilidade de um site, como o WAVE, Lighthouse e a extensão Axe. Além disso, é importante realizar testes com usuários reais para garantir que o site atenda às necessidades de todos.</p>
+            </div>
+            <div class="perguntas">
+                <h3 data-lang-pt="Quais são as leis e normas que regem a acessibilidade digital?" data-lang-en="What are the laws and standards governing digital accessibility?">Quais são as leis e normas que regem a acessibilidade digital?</h3>
+                <p data-lang-pt="No Brasil, a Lei Brasileira de Inclusão (Lei 13.146/2015) exige que sites públicos e privados atendam aos requisitos de acessibilidade. Além disso, as WCAG são amplamente adotadas como referência internacional para garantir a acessibilidade digital." data-lang-en="In Brazil, the Brazilian Inclusion Law (Law 13.146/2015) requires public and private websites to meet accessibility requirements. Additionally, the WCAG are widely adopted as an international reference for ensuring digital accessibility.">No Brasil, a Lei Brasileira de Inclusão (Lei 13.146/2015) exige que sites públicos e privados atendam aos requisitos de acessibilidade. Além disso, as WCAG são amplamente adotadas como referência internacional para garantir a acessibilidade digital.</p>
+            </div>
+            <div id="informações">
+                <p data-lang-pt="Se ficou com alguma dúvida, entre em contato com a gente." data-lang-en="If you have any questions, contact us.">Se ficou com alguma dúvida, entre em contato com a gente.</p>
+                <a href="contato.html" class="btn animate-btn" data-lang-pt="Saiba mais" data-lang-en="Learn more">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    <footer>
+        <p data-lang-pt="&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera." data-lang-en="&copy; 2024 - Digital Accessibility. Made by: Arthur Rodrigues Pansera.">&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera.</p>
+    </footer>
+</body>
+</html>

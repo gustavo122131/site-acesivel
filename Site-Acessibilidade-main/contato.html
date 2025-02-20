@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-lang-pt="Contato | Acessibilidade Digital" data-lang-en="Contact | Digital Accessibility">Contato | Acessibilidade Digital</title>
+    <link href="contato.css" rel="stylesheet">
+    <link rel="icon" href="imagens/icone.png" type="image/png">  
+</head>
+<body>
+    <header>
+        <div>
+            <nav class="nav">
+                <a href="index.html">
+                    <img src="imagens/logo.png" alt="Logo Acessibilidade Digital" data-lang-pt="Logo Acessibilidade Digital" data-lang-en="Digital Accessibility Logo">
+                </a>
+                <ul class="ul">
+                    <a href="index.html" data-lang-pt="Menu" data-lang-en="Menu">Menu</a>
+                    <a href="artigos.html" data-lang-pt="Artigos" data-lang-en="Articles">Artigos</a>
+                    <a href="recursos.html" data-lang-pt="Recursos" data-lang-en="Resources">Recursos</a>
+                    <a href="perguntas.html" data-lang-pt="Perguntas frequentes" data-lang-en="FAQs">Perguntas frequentes</a>
+                    <a class="btn" href="contato.html" data-lang-pt="Fale com a gente" data-lang-en="Contact us">Fale com a gente</a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="accessibility-buttons">
+        <button id="changeLanguage" class="accessibility" onclick="toggleLanguage()">
+            <img src="imagens/lingua.png" alt="Mudar idioma" data-lang-pt="Mudar idioma" data-lang-en="Change language">
+        </button>
+        <button id="toggleContrast" class="accessibility" onclick="toggleContrast()">
+            <img src="imagens/contraste.png" alt="Alterar contraste" data-lang-pt="Alterar contraste" data-lang-en="Change contrast">
+        </button>
+    </div>
+    <div class="font-size-controls">
+        <button id="increaseFont" class="accessibility1" onclick="changeFontSize('increase')">
+            <img src="imagens/aumentar.png" alt="Aumentar fonte" data-lang-pt="Aumentar fonte" data-lang-en="Increase font">
+        </button>
+        <button id="decreaseFont" class="accessibility1" onclick="changeFontSize('decrease')">
+            <img src="imagens/diminuir.png" alt="Diminuir fonte" data-lang-pt="Diminuir fonte" data-lang-en="Decrease font">
+        </button>
+    </div>
+    
+    <section class="container">
+        <h1 class="title" data-lang-pt="Entre em Contato" data-lang-en="Contact Us">Entre em Contato</h1>
+        <div class="box">
+            <form name="form" id="form" action="mailto:arthurpansera0308@gmail.com" method="POST">
+                <fieldset>
+                    <legend data-lang-pt="FORMULÁRIO DE CONTATO" data-lang-en="CONTACT FORM">FORMULÁRIO DE CONTATO</legend>
+                    <br>
+                    <div class="inputBox">
+                        <input type="text" name="nome" id="nome" class="inputUser" required>
+                        <label for="nome" class="labelInput" data-lang-pt="Nome completo" data-lang-en="Full name">Nome completo</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="cpf" id="cpf" class="inputUser" required>
+                        <label for="cpf" class="labelInput" data-lang-pt="CPF" data-lang-en="CPF">CPF</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="email" name="email" id="email" class="inputUser" required>
+                        <label for="email" class="labelInput" data-lang-pt="E-mail" data-lang-en="Email">E-mail</label>
+                    </div>
+                    <br><br>
+                    <div class="inputBox">
+                        <input type="text" name="telefone" id="telefone" class="inputUser" required>
+                        <label for="telefone" class="labelInput" data-lang-pt="Número de telefone" data-lang-en="Phone number">Número de telefone</label>
+                    </div>
+                    <br><br>
+                    <label for="data_nascimento" class="data" data-lang-pt="Data de nascimento:" data-lang-en="Date of birth:">Data de nascimento:</label>
+                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                    <br><br>
+                    <div class="textBox">
+                        <label for="mensagem" class="msg" data-lang-pt="Mensagem:" data-lang-en="Message:">Mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Escreva aqui" required></textarea>
+                    </div>
+                    <br><br>
+                    <div class="buttons">
+                        <input type="submit" name="submit" id="submit" value="Enviar" onclick="btnSendOnClick()" data-lang-pt="Enviar" data-lang-en="Send">
+                        <button type="reset" data-lang-pt="Limpar" data-lang-en="Clear">Limpar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+    <script>
+        const nome = document.getElementById('nome')
+        const cpf = document.getElementById('cpf')
+        const email = document.getElementById('email')
+        const telefone = document.getElementById('telefone')
+        const data_nascimento = document.getElementById('data_nascimento')
+        const mensagem = document.getElementById('mensagem')
+
+        function btnSendOnClick(){
+            if (nome.value == "") {
+                alert('Preenchimento obrigatório (Mandatory field): Nome (Name)')
+                nome.focus()
+            }
+            else if (nameWithoutNumbers(nome.value)) {
+                alert('Tipo de dado inválido (Invalid data type): Nome (Name)')
+                nome.value = ""
+                nome.focus()
+            }
+            else if (cpf.value == "") {
+                alert('Preenchimento obrigatório (Mandatory field): CPF')
+                cpf.focus()
+            }
+            else if (!isNumeric(cpf.value)) {
+                alert('Tipo de dado inválido (Invalid data type): CPF')
+                cpf.value = ""
+                cpf.focus()
+            }
+            else if (email.value == "") {
+                alert('Preenchimento obrigatório (Mandatory field): E-mail (Email)')
+                email.focus()
+            }
+            else if (!validEmail(email.value)) {
+                alert('Tipo de dado inválido (Invalid data type): Email (Email)')
+                email.value = ""
+                email.focus()
+            }
+            else if (telefone.value == "") {
+                alert('Preenchimento obrigatório (Mandatory field): Número de telefone (Phone number)')
+                telefone.focus()
+            }
+            else if (!validCellphone(telefone.value)) {
+                alert('Tipo de dado inválido (Invalid data type): Número de telefone (Phone number)')
+                telefone.value = ""
+                telefone.focus()
+            }
+            else if (data_nascimento.value == "") {
+                alert('Preenchimento obrigatório (Mandatory field): Data de nascimento (Date of birth)');
+                data_nascimento.focus();
+            }
+            else if (validarIdade(data_nascimento.value)) {
+                alert('Tipo de dado inválido (Invalid data type): Data de nascimento (Date of birth)');
+                data_nascimento.value = ""
+                data_nascimento.focus();
+            }
+            else if (mensagem.value == "") {
+                alert('Preenchimento obrigatório (Mandatory field): Mensagem (Message)')
+                mensagem.focus()
+            }
+            else {
+                form.submit()
+            }
+        }
+
+        function nameWithoutNumbers(nome) {
+            const re = /\d+/
+            return re.test(nome)
+        }
+
+        function isNumeric(cpf) {
+            const re = /^\d{3}\.?\d{3}\.?\d{3}-?\d{2}$/
+            return re.test(cpf)
+        }
+
+        function validEmail(email) {
+            const re = /^\w.+@\w{3}.*\.\w{2,3}$/
+            return re.test(email)
+        }
+
+        function validCellphone(telefone) {
+            const re = /^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$/
+            return re.test(telefone)
+        }
+
+        function validarIdade(data_nascimento) {
+            var hoje = new Date();
+            var nasc  = new Date(data_nascimento);
+            var idade = hoje.getFullYear() - nasc.getFullYear();
+            var m = hoje.getMonth() - nasc.getMonth();
+            if (m < 0 || (m === 0 && hoje.getDate() < nasc.getDate())) idade--;
+            
+            if(idade < 18) {
+                return true;
+            }
+
+            else {
+                return false;
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+    <footer>
+        <p data-lang-pt="&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera." data-lang-en="&copy; 2024 - Digital Accessibility. Made by: Arthur Rodrigues Pansera.">&copy; 2024 - Acessibilidade Digital. Feito por: Arthur Rodrigues Pansera.</p>
+    </footer>
+</body>
+</html>
